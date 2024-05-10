@@ -1,0 +1,148 @@
+   * {
+
+       margin: 0%;
+       padding: 0%;
+       box-sizing: border-box;
+       font-family: sans-serif;
+
+   }
+
+   .logo-futebol {
+
+       height: 450px;
+   }
+
+   .logo-bart {
+
+       height: 220px;
+   }
+
+   p {
+
+       font-size: larger;
+       color: white;
+       margin-top: 40px;
+   }
+
+   a.button {
+       display: inline-block;
+       padding: 10px 20px;
+       background-color: red;
+       text-decoration: double;
+       color: white;
+       margin-top: 40px;
+       border-radius: 3px;
+
+   }
+
+   body {
+       height: 100vh;
+   }
+
+   .caixa-mae {
+       display: flex;
+       height: 100vh;
+       align-items: center;
+       padding: 100px;
+       justify-content: space-around;
+
+
+   }
+
+   .caixa-principal {
+       width: 50%
+   }
+
+   .caixa-video {
+       position: fixed;
+       top: 0;
+       z-index: -1;
+   }
+
+   video {
+
+       width: 100vw;
+      
+   }
+
+   .mascara {
+       height: 100%;
+       width: 100%;
+       background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+       position: fixed;
+       top: 0;
+   }
+
+   .header {
+       display: flex;
+       align-items: center;
+       gap: 30px;
+       margin: 30px;
+
+   }
+
+   .header img {
+       height: 60px;
+   }
+
+   .header a {
+       color: white;
+       font-size: 18px;
+       cursor: pointer;
+       text-decoration: none;
+   }
+
+   .header a:hover {
+       color: blue;
+       font-size: 20px;
+       transition: 1.3s;
+   }
+
+
+
+
+
+
+   @media(max-width:1000px) {
+
+       
+
+       .caixa-mae {
+           flex-direction: column;
+           padding: 10px;
+       }
+       .caixa-principal{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+       }
+
+video{
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+}
+.logo-futebol{
+
+    width: 60vw;
+    height: 60vw;
+}
+
+.header img{
+    display: none;
+}
+
+.header a{
+
+    font-weight: bold;
+    text-decoration: none;
+
+}
+   }
+   
